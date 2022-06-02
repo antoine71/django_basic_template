@@ -1,4 +1,5 @@
 # Django Basic Template
+Very basic Cookiecutter Django template
 
 This is a very basic Django template aimed to replace the command `django-admin startproject`. This template follows the directory structure recommended in Two Scoops of Django by [Daniel & Audrey Roy Greenfeld](https://daniel.roygreenfeld.com/).
 
