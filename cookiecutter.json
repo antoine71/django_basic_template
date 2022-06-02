@@ -1,3 +1,4 @@
 {
-    "project_name": "django_basic_template"
+    "project_name": "django_basic_template",
+    "use_drf": "n"
 }
