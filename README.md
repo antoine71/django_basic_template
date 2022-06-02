@@ -1,6 +1,6 @@
 # Django Basic Template
 
-This is a basic Django template aimed to replace the command `django-admin startproject`. This template follows the directory structure recommended in Two Scoops of Django by [Daniel & Audrey Roy Greenfeld](https://daniel.roygreenfeld.com/).
+This is a very basic Django template aimed to replace the command `django-admin startproject`. This template follows the directory structure recommended in Two Scoops of Django by [Daniel & Audrey Roy Greenfeld](https://daniel.roygreenfeld.com/).
 
 ## Version
 This is an alpha version aimed to be fine tuned.
