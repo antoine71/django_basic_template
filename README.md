@@ -1,5 +1,5 @@
 # Django Basic Template
-Very basic Cookiecutter Django template
+**A very basic Cookiecutter Django template**
 
 This is a very basic Django template aimed to replace the command `django-admin startproject`. This template follows the directory structure recommended in Two Scoops of Django by [Daniel & Audrey Roy Greenfeld](https://daniel.roygreenfeld.com/).
 
@@ -18,7 +18,7 @@ Now run it against this repo :
 cookiecutter https://github.com/antoine71/django_basic_template
 ```
 
-You'll be prompted for the project name. Provide it, then a Django project will be created for you. Enter the project and take a look around :
+You'll be prompted for the project name and if you wish to use DRF. Provide the informnation, then a Django project will be created for you. Enter the project and take a look around :
 ```
 cd my_project_name/
 ls
@@ -50,8 +50,3 @@ git branch -M main
 git remote add origin git@github.com:antoine_71/my_project_name.git
 git push -u origin main
 ```
-
-## Todo
-
-* Include possibility to select Django version
-* Include possibility to select installation of DRF
