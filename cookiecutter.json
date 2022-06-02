@@ -1,4 +1,5 @@
 {
     "project_name": "django_basic_template",
+    "use_postgresql": "n",
     "use_drf": "n"
 }

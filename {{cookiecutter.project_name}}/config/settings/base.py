@@ -36,6 +36,7 @@ USE_TZ = True
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+{%- if cookiecutter.use_postgresql == "y" %}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -46,6 +47,16 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+{%- endif %}
+
+{%- if cookiecutter.use_postgresql != "y" %}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+{%- endif %}
 
 # URLS
 # ------------------------------------------------------------------------------

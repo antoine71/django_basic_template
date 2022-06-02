@@ -18,7 +18,7 @@ Now run it against this repo :
 cookiecutter https://github.com/antoine71/django_basic_template
 ```
 
-You'll be prompted for the project name and if you wish to use DRF. Provide the information, then a Django project will be created for you. Enter the project and take a look around :
+You'll be prompted for the project name, if you wish to use postgresql and DRF. Provide the information, then a Django project will be created for you. Enter the project and take a look around :
 ```
 cd my_project_name/
 ls
