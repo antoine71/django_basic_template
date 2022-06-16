@@ -13,15 +13,25 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.views.generic import TemplateView
+
+
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),    
-    path("{{cookiecutter.app_name}}/", include("{{cookiecutter.project_name}}.{{cookiecutter.app_name}}.urls", namespace="{{cookiecutter.app_name}}")),
-    path('admin/', admin.site.urls),
+    
+    path(settings.ADMIN_URL, admin.site.urls),
 {%- if cookiecutter.use_drf == "y" %}
     path('api-auth/', include('rest_framework.urls')),
 {%- endif %}    
 ]
+
+### include your apps urls below
+
+urlpatterns += [
+#     path("<your_app_name>/", include("{{cookiecutter.project_name}}.<your_app_name>.urls", namespace="<your_app_name>")),    
+]
+

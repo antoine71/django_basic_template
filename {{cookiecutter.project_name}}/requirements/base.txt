@@ -1,12 +1,15 @@
 # Django
 # ------------------------------------------------------------------------------
-django==4.0.5  # https://www.djangoproject.com/
-psycopg2-binary==2.9.3  # https://github.com/psycopg/psycopg2
+django  # https://www.djangoproject.com/
+psycopg2-binary  # https://github.com/psycopg/psycopg2
+django-autoslug # https://django-autoslug.readthedocs.io/
+django-environ # https://django-environ.readthedocs.io/
+whitenoise # http://whitenoise.evans.io/en/stable/index.html
 
 {%- if cookiecutter.use_drf == 'y' %}
 # Django Rest Framework
 # ------------------------------------------------------------------------------
-djangorestframework==3.13.1 # https://www.django-rest-framework.org/
-markdown==3.3.7  # https://www.django-rest-framework.org/#installation
-django-filter==21.1 # https://www.django-rest-framework.org/#installation
+djangorestframework # https://www.django-rest-framework.org/
+markdown  # https://www.django-rest-framework.org/#installation
+django-filter # https://www.django-rest-framework.org/#installation
 {%- endif %}

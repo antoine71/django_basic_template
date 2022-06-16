@@ -1,13 +1,19 @@
-import os
+import environ
 
 from .base import *
+
+
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+
 
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 DEBUG = False
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+SECRET_KEY = env('SECRET_KEY')
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
 
@@ -62,4 +68,6 @@ LOGGING = {
     }
 }
 
-DEBUG_PROPAGATE_EXCEPTIONS = True
+
+# Django Admin URL regex.
+ADMIN_URL = env('ADMIN_URL')
