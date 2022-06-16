@@ -131,3 +131,9 @@ static_old/
 
 # macOS
 .DS_Store
+
+# env variables file
+.env
+
+# staticfiles
+staticfiles/

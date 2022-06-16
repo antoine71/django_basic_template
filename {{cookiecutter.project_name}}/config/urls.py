@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 
 urlpatterns = [
+    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),    
+    path("{{cookiecutter.app_name}}/", include("{{cookiecutter.project_name}}.{{cookiecutter.app_name}}.urls", namespace="{{cookiecutter.app_name}}")),
     path('admin/', admin.site.urls),
 {%- if cookiecutter.use_drf == "y" %}
     path('api-auth/', include('rest_framework.urls')),

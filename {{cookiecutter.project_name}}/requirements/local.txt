@@ -1,5 +1,13 @@
 -r base.txt
 
+# Testing
+# ------------------------------------------------------------------------------
+pytest
+pytest-django
+factory-boy
+faker
+coverage
+
 # Code quality
 # ------------------------------------------------------------------------------
-flake8==4.0.1  # https://github.com/PyCQA/flake8
+flake8 # https://github.com/PyCQA/flake8
