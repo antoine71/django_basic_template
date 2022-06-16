@@ -7,6 +7,15 @@ env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
+# APPS
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
+INSTALLED_APPS += [
+    'django_extensions',
+    "debug_toolbar",
+]
+
+
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug

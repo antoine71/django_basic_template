@@ -8,6 +8,11 @@ factory-boy
 faker
 coverage
 
+## Tools
+# ------------------------------------------------------------------------------
+django-extensions
+django-debug-toolbar
+
 # Code quality
 # ------------------------------------------------------------------------------
 flake8 # https://github.com/PyCQA/flake8

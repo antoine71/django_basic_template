@@ -17,6 +17,9 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+{%- if cookiecutter.use_drf == 'y' %}
+from rest_framework.authtoken.views import obtain_auth_token
+{%- endif %}
 
 
 
@@ -28,6 +31,16 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
 {%- endif %}    
 ]
+{% if cookiecutter.use_drf == 'y' %}
+# API URLS
+urlpatterns += [
+    # API base url
+    path("api/", include("config.api_router")),
+    # DRF auth token
+    path("auth-token/", obtain_auth_token),
+]
+{%- endif %}
+
 
 ### include your apps urls below
 
