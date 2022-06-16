@@ -8,3 +8,4 @@ from rest_framework import serializers
 # class SampleSerializer(serializers.ModelSerializer):
 #     class Meta:
 #         model = SampleModel
+#         fields = '__all__'    
