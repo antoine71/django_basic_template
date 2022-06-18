@@ -4,6 +4,7 @@
 # ------------------------------------------------------------------------------
 pytest
 pytest-django
+pytest-cov
 factory-boy
 faker
 coverage
@@ -16,3 +17,4 @@ django-debug-toolbar
 # Code quality
 # ------------------------------------------------------------------------------
 flake8 # https://github.com/PyCQA/flake8
+black 
