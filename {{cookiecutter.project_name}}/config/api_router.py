@@ -2,7 +2,7 @@ from django.conf import settings
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
 ### import your views, example below
-# from {{ cookiecutter.project_slug }}.sample_app.api.views import SampleViewSet
+# from {{ cookiecutter.project_name }}.sample_app.api.views import SampleViewSet
 
 if settings.DEBUG:
     router = DefaultRouter()
