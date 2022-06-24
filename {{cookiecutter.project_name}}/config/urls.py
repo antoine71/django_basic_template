@@ -45,6 +45,7 @@ urlpatterns += [
 ### include your apps urls below
 
 urlpatterns += [
+    path("__debug__/", include("debug_toolbar.urls")),
 #     path("<your_app_name>/", include("{{cookiecutter.project_name}}.<your_app_name>.urls", namespace="<your_app_name>")),    
 ]
 
